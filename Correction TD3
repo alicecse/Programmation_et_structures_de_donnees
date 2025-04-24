@@ -1,0 +1,9 @@
+Je n'ai pas de vrai retour à te faire, ton fichier est propre, avec des commentaires, et un fichier de test séparé, c'est très bien !
+
+Quelques détails / précisions pour améliorer ton code:
+- Les variables privées doivent avoir deux underscore devant et non un, donc `self.__label, self.__children`
+- Tu peux simplifier ta fonction `is_leaf` en `return len(self.children) == 0`
+- Ta définition de ta classe fait que a l'initialisation, on fournit un label, et 0, 1 ou plusieurs fils; mais il y a toujours un label, et tes tests pour vérifier s'il n'y a pas de label ne servent pas vraiment.
+- Tu peux simplifier ta fonction `__str__` avec la fonction `join()`en python, tu peux regarder le corrigé pour voir comment on l'utilise
+
+Si jamais, voici le lien du corrigé: https://github.com/thomas-vinet/Mines-TD-PSD
