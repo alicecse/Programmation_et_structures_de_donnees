@@ -99,7 +99,7 @@ bouton_quit.pack(side='left', padx=100, pady=10)
 bouton_perm = Button(root, text="Permuter les couleurs", command=lambda:permuter_couleurs(canvas, nb_fils, croisements, h, w), bg='white')
 bouton_perm.pack(side='right', padx=100, pady=10)
 
-label_croisements = Label(root, text='Croisements :', bg='grey', fg='white', font=("Arial", 12),padx=1)
+label_croisements = Label(root, text=f'Croisements : {croisements}', bg='grey', fg='white', font=("Arial", 12),padx=1)
 label_croisements.pack()
 
 dessiner_entrelacs(canvas, nb_fils, croisements, h, w)
